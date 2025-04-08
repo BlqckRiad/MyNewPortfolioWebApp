@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enes Özbuğanlı - Computer Engineer</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#10b981'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .typing-animation {
+            border-right: 2px solid #3b82f6;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: typing 3.5s steps(30, end), blink-caret .75s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #3b82f6 }
+        }
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="#" class="text-2xl font-['Pacifico'] text-primary">Enes</a>
+            
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-gray-700 hover:text-primary transition-colors">About</a>
+                <a href="#projects" class="text-gray-700 hover:text-primary transition-colors">Projects</a>
+                <a href="#services" class="text-gray-700 hover:text-primary transition-colors">Services</a>
+                <a href="#blog" class="text-gray-700 hover:text-primary transition-colors">Blog</a>
+                <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+            </nav>
+            
+            <button class="hidden md:block bg-primary text-white px-5 py-2 !rounded-button font-medium whitespace-nowrap hover:bg-blue-600 transition-colors">Hire Me</button>
+            
+            <div class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700">
+                <i class="ri-menu-line ri-lg"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="w-full pt-28 pb-16 relative" style="background-image: url('https://public.readdy.ai/ai/img_res/bb255c8e66025a28326229d64034aa85.jpg'); background-size: cover; background-position: center right;">
+        <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-transparent"></div>
+        <div class="container mx-auto px-4 relative">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Hi, I'm Enes Özbuğanlı</h1>
+                <div class="h-12 overflow-hidden">
+                    <p class="typing-animation text-xl md:text-2xl text-primary font-medium">Computer Engineer & Developer</p>
+                </div>
+                <p class="text-gray-700 my-6 text-lg leading-relaxed">
+                    A passionate fourth-year Computer Engineering student at Sakarya University with expertise in backend development, mobile applications, and web technologies. Based in Istanbul, currently in Sakarya for studies.
+                </p>
+                
+                <div class="flex flex-wrap gap-2 mb-8">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">ASP.NET Core</span>
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">React Native</span>
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">React</span>
+                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium">C#</span>
+                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium">SQL</span>
+                    <span class="bg-red-100 text-red-pink px-3 py-1 rounded-full text-sm font-medium">Supabase - Firabase</span>
+                </div>
+                
+                <div class="flex items-center gap-4">
+                    <a href="Enes Özbuğanlı CV.pdf" download="Enes Özbuğanlı CV.pdf"
+   class="bg-primary text-white px-6 py-3 !rounded-button font-medium whitespace-nowrap hover:bg-blue-600 transition-colors flex items-center gap-2">
+    <i class="ri-download-line"></i> Download CV
+</a>
+
+                    
+                    <div class="flex items-center gap-3 ml-4">
+                        <a href="https://github.com/BlqckRiad" class="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-sm hover:bg-gray-50 transition-colors">
+                            <i class="ri-github-line ri-lg text-gray-700"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/enes-özbuğanlı-b53314293/" class="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-sm hover:bg-gray-50 transition-colors">
+                            <i class="ri-linkedin-line ri-lg text-gray-700"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce w-10 h-10 flex items-center justify-center">
+            <i class="ri-arrow-down-line ri-lg text-primary"></i>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">About Me</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mt-4 mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Get to know more about me, my background, and what I do</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-2/5">
+                    <div class="relative">
+                        <div class="absolute -top-4 -left-4 w-full h-full border-2 border-primary rounded-lg"></div>
+                        <img src="/Images/cvfoto.jpg" alt="Enes Özbuğanlı" class="rounded-lg shadow-lg relative z-10 object-cover w-full h-auto">
+                    </div>
+                </div>
+                
+                <div class="md:w-3/5">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Computer Engineer & Developer</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        I am a dedicated Computer Engineering student at Sakarya University with a passion for creating efficient, scalable, and user-friendly applications. My journey in technology began with web development and has expanded to include backend systems and mobile applications.
+                    </p>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Currently in my fourth year of studies, I balance academic pursuits with practical project work, constantly seeking to expand my knowledge and refine my skills in the ever-evolving tech landscape.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <p class="text-gray-900 font-medium mb-1">Name:</p>
+                            <p class="text-gray-700">Enes Özbuğanlı</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-900 font-medium mb-1">Email:</p>
+                            <p class="text-gray-700">enesozbuganli36@gmail.com</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-900 font-medium mb-1">Location:</p>
+                            <p class="text-gray-700">Istanbul / Sakarya, Turkey</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-900 font-medium mb-1">Education:</p>
+                            <p class="text-gray-700">Sakarya University, Computer Engineering</p>
+                        </div>
+                    </div>
+                    
+                    <h4 class="text-xl font-bold text-gray-900 mb-4">My Skills</h4>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">Backend Development (ASP.NET, C#)</span>
+                                <span class="text-gray-600">90%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-2 bg-primary rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">Mobile Development (React Native)</span>
+                                <span class="text-gray-600">85%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-2 bg-primary rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">Web Development (React, HTML, CSS)</span>
+                                <span class="text-gray-600">80%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-2 bg-primary rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-700 font-medium">Database Management (SQL, NoSQL)</span>
+                                <span class="text-gray-600">85%</span>
+                            </div>
+                            <div class="h-2 bg-gray-200 rounded-full">
+                                <div class="h-2 bg-primary rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">My Projects</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mt-4 mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore some of my recent work and projects</p>
+            </div>
+            
+            <!-- <div class="flex justify-center mb-8">
+                <div class="inline-flex bg-white p-1 rounded-full shadow-sm">
+                    <button class="px-4 py-2 text-sm font-medium text-white bg-primary rounded-full whitespace-nowrap">All Projects</button>
+                    <button class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-primary rounded-full whitespace-nowrap">Web</button>
+                    <button class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-primary rounded-full whitespace-nowrap">Mobile</button>
+                    <button class="px-4 py-2 text-sm font-medium text-gray-700 hover:text-primary rounded-full whitespace-nowrap">Backend</button>
+                </div>
+            </div> -->
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:-translate-y-2">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/Images/fmmobilapp.png" alt="FindMovix Project" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">FindMovix</h3>
+                        <p class="text-gray-600 mb-4">AI-powered movie recommendation application that suggests films based on user preferences and viewing history.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">React Native</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">ASP.NET Core</span>
+                            <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">AI</span>
+                            <span class="bg-purple-100 text-red-800 px-2 py-1 rounded-full text-xs font-medium">MsSql</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="/DetailScreen/FindMovixDetails.html" class="text-primary font-medium flex items-center gap-1 hover:underline">
+                                View Details <i class="ri-arrow-right-line"></i>
+                            </a>
+                            <div class="flex gap-2">
+                                <a href="https://github.com/BlqckRiad/FindMovixApp" class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:-translate-y-2">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/Images/sonkocapp.png" alt="SonKoç Project" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">SonKoç</h3>
+                        <p class="text-gray-600 mb-4">AI-supported educational platform providing personalized learning paths and interactive study materials for students.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">Bootstrap</span>
+                            <span class="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs font-medium">ASP.NET Core</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium">MsSql</span>
+                            <span class="bg-yellow-100 text-red-800 px-2 py-1 rounded-full text-xs font-medium">Figma</span>
+                            <span class="bg-yellow-100 text-purple-800 px-2 py-1 rounded-full text-xs font-medium">Web Api</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="/DetailScreen/SonKocDetails.html" class="text-primary font-medium flex items-center gap-1 hover:underline">
+                                View Details <i class="ri-arrow-right-line"></i>
+                            </a>
+                            <div class="flex gap-2">
+                                <a href="https://github.com/BlqckRiad/SonKoc" class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:-translate-y-2">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/Images/sakutapp.png" alt="SAKUT-Depo Project" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">SAKUT-Depo Yönetim Sistemi</h3>
+                        <p class="text-gray-600 mb-4">Warehouse management system for Sultanbeyli Municipality Search and Rescue Team to track equipment and inventory.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">ASP.NET MVC</span>
+                            <span class="bg-red-100 text-red-800 px-2 py-1 rounded-full text-xs font-medium">Firebase</span>
+                            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded-full text-xs font-medium">Bootstrap</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="/DetailScreen/SakutDetails.html" class="text-primary font-medium flex items-center gap-1 hover:underline">
+                                View Details <i class="ri-arrow-right-line"></i>
+                            </a>
+                            <div class="flex gap-2">
+                                <a href="https://github.com/BlqckRiad/SAKUTAPP" class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:-translate-y-2">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/Images/EmrecanApp.png" alt="Attorney Website Project" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Attorney Emrecan Sayret Website</h3>
+                        <p class="text-gray-600 mb-4">Professional website for Attorney Emrecan Sayret showcasing services, expertise, and providing client resources.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">Supabase</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium">JavaScript</span>
+                            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded-full text-xs font-medium">Next.js</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="/DetailScreen/LawyerEmrecanDetails.html" class="text-primary font-medium flex items-center gap-1 hover:underline">
+                                View Details <i class="ri-arrow-right-line"></i>
+                            </a>
+                            <div class="flex gap-2">
+                                <a href="https://github.com/BlqckRiad/AvEmrecanSayretWebApp" class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary">
+                                    <i class="ri-github-line"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">My Services</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mt-4 mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Professional services I offer to help bring your ideas to life</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 rounded-lg p-8 shadow-sm transition-all hover:shadow-md">
+                    <div class="w-16 h-16 flex items-center justify-center bg-blue-100 text-primary rounded-lg mb-6">
+                        <i class="ri-server-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Backend Development</h3>
+                    <p class="text-gray-600 mb-6">
+                        Robust and scalable backend solutions using ASP.NET Core, Web API, and database technologies to power your applications.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start gap-2">
+                            <i class="ri-check-line text-primary mt-1"></i>
+                            <span class="text-gray-700">RESTful API Development</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="ri-check-line text-primary mt-1"></i>
+                            <span class="text-gray-700">Database Design & Integration</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="ri-check-line text-primary mt-1"></i>
+                            <span class="text-gray-700">Authentication & Security</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="ri-check-line text-primary mt-1"></i>
+                            <span class="text-gray-700">Performance Optimization</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-gray-50 rounded-lg p-8 shadow-sm transition-all hover:shadow-md">
+                    <div class="w-16 h-16 flex items-center justify-center bg-green-100 text-secondary rounded-lg mb-6">
+                        <i class="ri-smartphone-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Mobile Development</h3>
+                    <p class="text-gray-600 mb-6">
+                        Cross-platform mobile applications using React Native that provide native-like experience on both iOS and Android devices.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start gap-2">
+                            <i class="ri-check-line text-secondary mt-1"></i>
+                            <span class="text-gray-700">Cross-Platform Applications</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="ri-check-line text-secondary mt-1"></i>
+                            <span class="text-gray-700">UI/UX Implementation</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="ri-check-line text-secondary mt-1"></i>
+                            <span class="text-gray-700">API Integration</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="ri-check-line text-secondary mt-1"></i>
+                            <span class="text-gray-700">App Store Deployment</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-gray-50 rounded-lg p-8 shadow-sm transition-all hover:shadow-md">
+                    <div class="w-16 h-16 flex items-center justify-center bg-purple-100 text-purple-600 rounded-lg mb-6">
+                        <i class="ri-code-s-slash-line ri-2x"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Web Development</h3>
+                    <p class="text-gray-600 mb-6">
+                        Modern, responsive web applications using React and other frontend technologies that provide exceptional user experiences.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start gap-2">
+                            <i class="ri-check-line text-purple-600 mt-1"></i>
+                            <span class="text-gray-700">Responsive Web Design</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="ri-check-line text-purple-600 mt-1"></i>
+                            <span class="text-gray-700">Single Page Applications</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="ri-check-line text-purple-600 mt-1"></i>
+                            <span class="text-gray-700">Frontend Performance</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="ri-check-line text-purple-600 mt-1"></i>
+                            <span class="text-gray-700">Web Accessibility</span>
+                        </li>
+                    </ul>
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Latest Articles</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mt-4 mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Insights, tutorials, and thoughts on technology and development</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Blog Post 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:-translate-y-2">
+                    <div class="h-48 overflow-hidden">
+                        <img src="/Images/ExpoBlog.png" alt="Database Blog Post" class="w-full h-full object-cover object-top">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="text-sm text-gray-500">Jan 11, 2025</span>
+                            <span class="text-sm text-gray-500 flex items-center gap-1">
+                                <i class="ri-time-line"></i> 6 min read
+                            </span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">EAS Login, Android Yayınlama ve Expo Kullanımı</h3>
+                        <p class="text-gray-600 mb-4">
+                            EAS servislerinden yararlanmak için ilk adım, EAS Login işlemini gerçekleştirmektir. Bu, Expo’nun bulut hizmetlerine erişmek için kimlik doğrulama işlemidir. Expo CLI kullanarak giriş yapabilirsiniz.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://medium.com/@Cloudness/eas-login-android-yayınlama-ve-expo-kullanımı-2639d60550f3" class="text-primary font-medium flex items-center gap-1 hover:underline">
+                                Read More <i class="ri-arrow-right-line"></i>
+                            </a>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs font-medium">React Native</span>
+                                <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs font-medium">Expo</span>
+                                <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded-full text-xs font-medium">Next.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <div class="text-center mt-12">
+                <button class="bg-white border border-primary text-primary px-6 py-3 !rounded-button font-medium whitespace-nowrap hover:bg-primary hover:text-white transition-colors">
+                    View All Articles
+                </button>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">Get In Touch</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mt-4 mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have a project in mind or want to discuss a collaboration? Feel free to reach out!</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                          <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                            <input type="text" id="name" required class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="John Doe">
+                          </div>
+                          <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Your Email</label>
+                            <input type="email" id="email" required class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="john@example.com">
+                          </div>
+                        </div>
+                        <div>
+                          <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                          <input type="text" id="subject" class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Project Inquiry">
+                        </div>
+                        <div>
+                          <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                          <textarea id="message" rows="5" required class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-colors w-full md:w-auto">
+                          Send Message
+                        </button>
+                      </form>
+                    </div>
+                
+
+
+
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-lg h-full">
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 flex items-center justify-center bg-blue-100 text-primary rounded-full mt-1">
+                                    <i class="ri-map-pin-line"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-medium text-gray-900 mb-1">Location</h4>
+                                    <p class="text-gray-600">Istanbul / Sakarya, Turkey</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 flex items-center justify-center bg-blue-100 text-primary rounded-full mt-1">
+                                    <i class="ri-mail-line"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-medium text-gray-900 mb-1">Email</h4>
+                                    <p class="text-gray-600">enesozbuganli36@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 flex items-center justify-center bg-blue-100 text-primary rounded-full mt-1">
+                                    <i class="ri-phone-line"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-medium text-gray-900 mb-1">Phone</h4>
+                                    <p class="text-gray-600">+90 (534) 736 91 03</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="text-lg font-medium text-gray-900 mb-4">Follow Me</h4>
+                            <div class="flex gap-3">
+                                <a href="github.com/BlqckRiad" class="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-sm hover:bg-gray-50 transition-colors">
+                                    <i class="ri-github-line text-gray-700"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/enes-özbuğanlı-b53314293/" class="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-sm hover:bg-gray-50 transition-colors">
+                                    <i class="ri-linkedin-line text-gray-700"></i>
+                                </a>
+                                <a href="https://www.instagram.com/enesozbuganli/" class="w-10 h-10 flex items-center justify-center bg-white rounded-full shadow-sm hover:bg-gray-50 transition-colors">
+                                    <i class="ri-instagram-line text-gray-700"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Newsletter Section -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-2xl font-bold mb-4">Subscribe to My Newsletter</h2>
+                <p class="text-gray-300 mb-8">Stay updated with my latest articles, projects, and tech insights</p>
+                
+                <form id="subscribe-form" class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                    <input type="email" id="email2" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-lg border-none text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary">
+                    <button type="submit" class="bg-primary text-white px-6 py-3 !rounded-button font-medium whitespace-nowrap hover:bg-blue-600 transition-colors">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <a href="#" class="text-2xl font-['Pacifico'] text-white mb-4 inline-block">Enes</a>
+                    <p class="text-gray-400 mb-4">Computer Engineer specializing in backend and mobile development.</p>
+                    <div class="flex gap-3">
+                        <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-github-line"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                        <a href="#" class="w-8 h-8 flex items-center justify-center bg-gray-700 rounded-full hover:bg-primary transition-colors">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#blog" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Backend Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Mobile Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Web Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Database Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">API Integration</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2">
+                            <i class="ri-map-pin-line mt-1"></i>
+                            <span class="text-gray-400">Istanbul / Sakarya, Turkey</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="ri-mail-line mt-1"></i>
+                            <span class="text-gray-400">enesozbuganli36@gmail.com</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="ri-phone-line mt-1"></i>
+                            <span class="text-gray-400">+90 (534) 736 91 03</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-center items-center">
+                <p class="text-gray-400 text-sm">© 2025 Enes Özbuğanlı. All rights reserved.</p>  
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#about" class="fixed bottom-8 right-8 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+        <i class="ri-arrow-up-line ri-lg"></i>
+    </a>
+
+    
+
+    <script>
+        const supabaseUrl = 'https://acqthycsyaqfhtwigozq.supabase.co';
+        const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFjcXRoeWNzeWFxZmh0d2lnb3pxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDEyODUwNzgsImV4cCI6MjA1Njg2MTA3OH0.DcsZkzAUDrXW6bIpBtxtJ4hcaLWiBZ7n8IOpF5Nu1tk';
+    
+        document.getElementById('contactForm').addEventListener('submit', async function (e) {
+          e.preventDefault();
+    
+          const name = document.getElementById('name').value.trim();
+          const email = document.getElementById('email').value.trim();
+          const subject = document.getElementById('subject').value.trim();
+          const message = document.getElementById('message').value.trim();
+    
+          const response = await fetch(`${supabaseUrl}/rest/v1/webportfoliocontact`, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'apikey': supabaseAnonKey,
+              'Authorization': `Bearer ${supabaseAnonKey}`
+            },
+            body: JSON.stringify({ name, email, subject, message })
+          });
+    
+          if (response.ok) {
+            alert('✅ Message Sucsessfully !');
+            e.target.reset();
+          } else {
+            alert('❌ We have a one error.');
+            console.error(await response.text());
+          }
+        });
+      </script>
+
+<script>
+    const supabaseUrl2 = 'https://acqthycsyaqfhtwigozq.supabase.co';
+    const supabaseAnonKey2 = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFjcXRoeWNzeWFxZmh0d2lnb3pxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDEyODUwNzgsImV4cCI6MjA1Njg2MTA3OH0.DcsZkzAUDrXW6bIpBtxtJ4hcaLWiBZ7n8IOpF5Nu1tk';
+    
+    document.getElementById('subscribe-form').addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        const email = document.getElementById('email2').value.trim();
+
+        // Eğer email boşsa, kullanıcıyı bilgilendir
+        if (!email) {
+            alert('❌ Please enter your email address.');
+            return;
+        }
+
+        // Supabase'a email ekleme
+        const response = await fetch(`${supabaseUrl2}/rest/v1/webportfolioemailsubs`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'apikey': supabaseAnonKey2,
+                'Authorization': `Bearer ${supabaseAnonKey2}`,
+            },
+            body: JSON.stringify({ email })
+        });
+
+        // Yanıt kontrolü
+        if (response.ok) {
+            alert('✅ You have successfully subscribed!');
+            e.target.reset(); // Formu sıfırla
+        } else {
+            alert('❌ We encountered an error.');
+            console.error(await response.text());
+        }
+    });
+</script>
+
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Back to top button visibility
+        const backToTopButton = document.querySelector('a[href="#"]');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

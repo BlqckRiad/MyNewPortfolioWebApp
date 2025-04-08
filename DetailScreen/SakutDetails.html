@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SakutApp - Project Details | Enes Özbuğanlı</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#3b82f6',secondary:'#10b981'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+  font-family: 'Inter', sans-serif;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.gallery-image:hover .overlay {
+  opacity: 1;
+}
+.gallery-image:hover img {
+  transform: scale(1.05);
+}
+</style>
+</head>
+<body class="bg-gray-50">
+<!-- Header & Navigation -->
+<header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+  <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-2">
+      <a href="/index.html" data-readdy="true" class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">
+        <i class="ri-arrow-left-line ri-lg text-gray-700"></i>
+      </a>
+      <a href="/index.html" class="text-2xl font-['Pacifico'] text-primary">Enes</a>
+    </div>
+    <div class="hidden md:flex items-center">
+      <h1 class="text-xl font-semibold text-gray-800">Sakut Project</h1>
+    </div>
+    <div class="flex items-center gap-3">
+      <button class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full hover:bg-gray-200 transition-colors">
+        <a href="https://enesozbuganli.com/DetailScreen/SakutDetails.html" target="_blank">
+          <i class="ri-share-line ri-lg text-gray-700"></i>
+        </a>
+      </button>
+      
+      <a href="/index.html#projects" data-readdy="true" class="hidden md:block bg-primary text-white px-5 py-2 !rounded-button font-medium whitespace-nowrap hover:bg-blue-600 transition-colors">Back to Portfolio</a>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="pt-24 pb-8 relative">
+  <div class="relative w-full h-[400px] md:h-[500px] overflow-hidden">
+    <!-- Buraya projenize ait görseli ekleyeceksiniz -->
+    <img src="/Images/sakutapp.png" alt="Sakut Project" class="w-full h-full object-cover object-top">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+    <div class="absolute bottom-0 left-0 right-0 p-8">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <div class="flex flex-wrap gap-2 mb-3">
+              <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Firebase</span>
+              <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">HTML/CSS/JS</span>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold text-white mb-2">Sakut</h1>
+            <p class="text-gray-200">Disaster Recovery Inventory Management Platform</p>
+          </div>
+          <div class="flex flex-col items-end">
+            <div class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
+              <p class="text-white"><span class="font-medium">Completed:</span> Feb 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Project Overview -->
+<section class="py-12 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Project Overview</h2>
+      <div class="prose max-w-none text-gray-700">
+        <p class="mb-4">
+          Sakut is a disaster recovery inventory management platform designed to help Sultanbeyli Belediyesi Afet Kurtarma Timi efficiently track and manage supplies and products used during disaster recovery operations. The system aims to optimize inventory control and ensure quick access to critical resources when needed.
+        </p>
+        <p class="mb-6">
+          This project was developed as a part of my work with the municipality's disaster recovery team. The main goal was to provide an easy-to-use platform that allows team members to monitor inventory, track products, and ensure timely availability of essential items during emergencies.
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 mb-8">
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Project Details</h3>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 flex items-center justify-center text-primary mt-0.5">
+                  <i class="ri-user-line"></i>
+                </div>
+                <div>
+                  <span class="font-medium text-gray-900">Client:</span>
+                  <span class="text-gray-700"> Sultanbeyli Belediyesi Afet Kurtarma Timi</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 flex items-center justify-center text-primary mt-0.5">
+                  <i class="ri-calendar-line"></i>
+                </div>
+                <div>
+                  <span class="font-medium text-gray-900">Timeline:</span>
+                  <span class="text-gray-700"> March 2025 - Soon</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 flex items-center justify-center text-primary mt-0.5">
+                  <i class="ri-team-line"></i>
+                </div>
+                <div>
+                  <span class="font-medium text-gray-900">Team Size:</span>
+                  <span class="text-gray-700"> 1 member (Solo Project)</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="w-6 h-6 flex items-center justify-center text-primary mt-0.5">
+                  <i class="ri-user-settings-line"></i>
+                </div>
+                <div>
+                  <span class="font-medium text-gray-900">My Role:</span>
+                  <span class="text-gray-700"> Full Stack Developer (Frontend & Backend)</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="bg-gray-50 p-6 rounded-lg">
+            <h3 class="text-lg font-semibold text-gray-900 mb-4">Technologies Used</h3>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 flex items-center justify-center bg-blue-100 text-blue-600 rounded-lg">
+                  <i class="ri-html5-line ri-lg"></i>
+                </div>
+                <span class="text-gray-700">HTML</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 flex items-center justify-center bg-green-100 text-green-600 rounded-lg">
+                  <i class="ri-css3-line ri-lg"></i>
+                </div>
+                <span class="text-gray-700">CSS</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 flex items-center justify-center bg-yellow-100 text-yellow-600 rounded-lg">
+                  <i class="ri-javascript-line ri-lg"></i>
+                </div>
+                <span class="text-gray-700">JavaScript</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 flex items-center justify-center bg-teal-100 text-teal-600 rounded-lg">
+                  <i class="ri-database-2-line ri-lg"></i>
+                </div>
+                <span class="text-gray-700">Firebase</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-lg">
+                  <i class="ri-github-line ri-lg"></i>
+                </div>
+                <span class="text-gray-700">Git/GitHub</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Problem & Solution -->
+<section class="py-12 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">The Problem</h2>
+          <div class="prose max-w-none text-gray-700">
+            <p class="mb-4">
+              Disaster recovery operations often face challenges in managing and tracking resources efficiently:
+            </p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-start gap-2">
+                <div class="w-5 h-5 flex items-center justify-center bg-red-100 text-red-600 rounded-full mt-0.5">
+                  <i class="ri-close-line text-sm"></i>
+                </div>
+                <span>Inaccurate tracking of supplies and inventory in real-time</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <div class="w-5 h-5 flex items-center justify-center bg-red-100 text-red-600 rounded-full mt-0.5">
+                  <i class="ri-close-line text-sm"></i>
+                </div>
+                <span>Lack of immediate access to critical resource information during operations</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <div class="w-5 h-5 flex items-center justify-center bg-red-100 text-red-600 rounded-full mt-0.5">
+                  <i class="ri-close-line text-sm"></i>
+                </div>
+                <span>Difficulty in coordinating between team members regarding inventory status</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <div class="w-5 h-5 flex items-center justify-center bg-red-100 text-red-600 rounded-full mt-0.5">
+                  <i class="ri-close-line text-sm"></i>
+                </div>
+                <span>Manual, error-prone inventory management methods</span>
+              </li>
+            </ul>
+            <p>
+              These challenges hinder the effectiveness of disaster recovery teams, making it harder to respond swiftly during emergencies.
+            </p>
+          </div>
+        </div>
+        
+        <div>
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">The Solution</h2>
+          <div class="prose max-w-none text-gray-700">
+            <p class="mb-4">
+              Sakut offers an effective solution to these challenges by providing a centralized inventory management system:
+            </p>
+            <ul class="space-y-2 mb-6">
+              <li class="flex items-start gap-2">
+                <div class="w-5 h-5 flex items-center justify-center bg-green-100 text-green-600 rounded-full mt-0.5">
+                  <i class="ri-check-line text-sm"></i>
+                </div>
+                <span>Real-time tracking of inventory and supplies using an intuitive interface</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <div class="w-5 h-5 flex items-center justify-center bg-green-100 text-green-600 rounded-full mt-0.5">
+                  <i class="ri-check-line text-sm"></i>
+                </div>
+                <span>Instant access to up-to-date inventory data during disaster recovery operations</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <div class="w-5 h-5 flex items-center justify-center bg-green-100 text-green-600 rounded-full mt-0.5">
+                  <i class="ri-check-line text-sm"></i>
+                </div>
+                <span>Real-time collaboration and communication between team members</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <div class="w-5 h-5 flex items-center justify-center bg-green-100 text-green-600 rounded-full mt-0.5">
+                  <i class="ri-check-line text-sm"></i>
+                </div>
+                <span>Automated and accurate inventory management system, reducing human errors</span>
+              </li>
+            </ul>
+            <p>
+              By providing accurate and real-time data, Sakut enables disaster recovery teams to act quickly and efficiently, improving overall response times during emergencies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Key Features -->
+<section class="py-12 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">Key Features</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-primary rounded-lg mb-4">
+            <i class="ri-ai-generate ri-lg"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Real-Time Inventory Tracking</h3>
+          <p class="text-gray-700">
+            The system tracks inventory in real-time, providing accurate data on the availability of resources during disaster recovery operations.
+          </p>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <div class="w-12 h-12 flex items-center justify-center bg-green-100 text-secondary rounded-lg mb-4">
+            <i class="ri-user-settings-line ri-lg"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Collaborative Team Management</h3>
+          <p class="text-gray-700">
+            Team members can collaborate seamlessly, ensuring better coordination and timely updates on inventory status.
+          </p>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <div class="w-12 h-12 flex items-center justify-center bg-purple-100 text-purple-600 rounded-lg mb-4">
+            <i class="ri-task-line ri-lg"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Task and Resource Assignment</h3>
+          <p class="text-gray-700">
+            Resources and tasks are assigned efficiently, allowing for optimal utilization of available inventory during disaster relief efforts.
+          </p>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <div class="w-12 h-12 flex items-center justify-center bg-yellow-100 text-yellow-600 rounded-lg mb-4">
+            <i class="ri-calendar-line ri-lg"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Resource Scheduling</h3>
+          <p class="text-gray-700">
+            The integrated calendar helps teams schedule resource usage and track essential deadlines, ensuring timely responses.
+          </p>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <div class="w-12 h-12 flex items-center justify-center bg-red-100 text-red-600 rounded-lg mb-4">
+            <i class="ri-group-line ri-lg"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Real-Time Team Communication</h3>
+          <p class="text-gray-700">
+            Team members can instantly communicate and share updates on resource availability, ensuring better decision-making.
+          </p>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-lg">
+          <div class="w-12 h-12 flex items-center justify-center bg-indigo-100 text-indigo-600 rounded-lg mb-4">
+            <i class="ri-dashboard-line ri-lg"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Progress and Resource Analytics</h3>
+          <p class="text-gray-700">
+            Get insights into resource usage and team progress, with visual analytics that help optimize operations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Implementation Details -->
+<section class="py-12 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">Implementation Details</h2>
+      
+      <div class="space-y-8">
+        <!-- Technical Architecture Section -->
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h3 class="text-lg font-semibold text-gray-900 mb-4">Technical Architecture</h3>
+          <p class="text-gray-700 mb-6">
+            Sakut follows a modern client-server architecture, ensuring effective disaster recovery operations through the management of resources and real-time data updates:
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+            <!-- Frontend Details -->
+            <div class="bg-gray-50 p-4 rounded">
+              <h4 class="font-medium text-gray-900 mb-2">Frontend</h4>
+              <ul class="space-y-1 text-gray-700 text-sm">
+                <li class="flex items-center gap-2">
+                  <i class="ri-checkbox-circle-line text-primary"></i>
+                  <span>HTML, CSS, and JavaScript for lightweight and responsive UI</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="ri-checkbox-circle-line text-primary"></i>
+                  <span>Data visualization for inventory and resources</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="ri-checkbox-circle-line text-primary"></i>
+                  <span>Firebase for real-time updates and notifications</span>
+                </li>
+              </ul>
+            </div>
+            <!-- Backend Details -->
+            <div class="bg-gray-50 p-4 rounded">
+              <h4 class="font-medium text-gray-900 mb-2">Backend</h4>
+              <ul class="space-y-1 text-gray-700 text-sm">
+                <li class="flex items-center gap-2">
+                  <i class="ri-checkbox-circle-line text-primary"></i>
+                  <span>Firebase for backend services and real-time data management</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="ri-checkbox-circle-line text-primary"></i>
+                  <span>Firestore for efficient database storage and queries</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="ri-checkbox-circle-line text-primary"></i>
+                  <span>Authentication for secure access to resources</span>
+                </li>
+              </ul>
+            </div>
+            <!-- Infrastructure Details -->
+            <div class="bg-gray-50 p-4 rounded">
+              <h4 class="font-medium text-gray-900 mb-2">Infrastructure</h4>
+              <ul class="space-y-1 text-gray-700 text-sm">
+                <li class="flex items-center gap-2">
+                  <i class="ri-checkbox-circle-line text-primary"></i>
+                  <span>Firebase Hosting for fast and reliable app hosting</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="ri-checkbox-circle-line text-primary"></i>
+                  <span>Cloud Firestore for data storage and scalability</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="ri-checkbox-circle-line text-primary"></i>
+                  <span>CI/CD pipeline for continuous integration and deployment</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Database Design Section -->
+        <div class="bg-white p-6 rounded-lg shadow-sm">
+          <h3 class="text-lg font-semibold text-gray-900 mb-4">Database Design</h3>
+          <p class="text-gray-700 mb-6">
+            The database schema is designed to efficiently manage disaster recovery resources, tasks, and team collaboration:
+          </p>
+          <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200">
+              <thead class="bg-gray-50">
+                <tr>
+                  <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Entity</th>
+                  <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description</th>
+                  <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Key Attributes</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white divide-y divide-gray-200">
+                <tr>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Resources</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Information about available disaster recovery resources</td>
+                  <td class="px-6 py-4 text-sm text-gray-700">ResourceID, Name, Quantity, Location</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Teams</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Details of teams assigned to various tasks</td>
+                  <td class="px-6 py-4 text-sm text-gray-700">TeamID, Team Name, Members, Assigned Tasks</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Tasks</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Information about tasks assigned during disaster recovery</td>
+                  <td class="px-6 py-4 text-sm text-gray-700">TaskID, Task Name, Description, Due Date</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">TeamProgress</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Tracks the progress of tasks and resource usage for each team</td>
+                  <td class="px-6 py-4 text-sm text-gray-700">TeamID, TaskID, Progress Status, Last Updated</td>
+                </tr>
+                <tr>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">ResourceUsage</td>
+                  <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-700">Stores the usage details of each resource during operations</td>
+                  <td class="px-6 py-4 text-sm text-gray-700">ResourceID, TaskID, Quantity Used, Date</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- Project Links -->
+<section class="py-12 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold text-gray-900 mb-8">Project Links</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <a href="sakut.enesozbuganli.com" class="flex items-center gap-4 p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <div class="w-12 h-12 flex items-center justify-center bg-primary/10 text-primary rounded-lg">
+            <i class="ri-global-line ri-lg"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-900">Live Demo</h3>
+            <p class="text-gray-600 text-sm">Experience the application in action</p>
+          </div>
+        </a>
+        
+        <a href="https://github.com/BlqckRiad/SAKUTAPP" class="flex items-center gap-4 p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
+          <div class="w-12 h-12 flex items-center justify-center bg-gray-800/10 text-gray-800 rounded-lg">
+            <i class="ri-github-line ri-lg"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-900">GitHub Repository</h3>
+            <p class="text-gray-600 text-sm">View the source code and documentation</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Navigation Footer -->
+<section class="py-12 bg-gray-50 border-t border-gray-200">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <a href="/DetailScreen/SonKocDetails.html" class="flex items-center gap-2 text-gray-700 hover:text-primary transition-colors mb-4 md:mb-0">
+          <i class="ri-arrow-left-line"></i>
+          <span>Previous Project: SonKoç</span>
+        </a>
+        
+        <a href="/index.html#projects" data-readdy="true" class="bg-white border border-gray-200 text-gray-800 px-6 py-3 !rounded-button font-medium whitespace-nowrap hover:bg-gray-50 transition-colors mb-4 md:mb-0">
+          Back to All Projects
+        </a>
+        
+        <a href="/DetailScreen/FindMovixDetails.html" class="flex items-center gap-2 text-gray-700 hover:text-primary transition-colors">
+          <span>Next Project: FindMovix</span>
+          <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact CTA -->
+<section class="py-16 bg-primary/5">
+  <div class="container mx-auto px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Interested in working together?</h2>
+      <p class="text-gray-700 mb-8">
+        If you're looking for a developer with expertise in AI-powered applications, backend systems, or web development, I'd love to discuss your project.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/index.html#contact" data-readdy="true" class="bg-primary text-white px-6 py-3 !rounded-button font-medium whitespace-nowrap hover:bg-blue-600 transition-colors">
+          Contact Me
+        </a>
+        <a href="/index.html" data-readdy="true" class="bg-white border border-primary text-primary px-6 py-3 !rounded-button font-medium whitespace-nowrap hover:bg-primary hover:text-white transition-colors">
+          View Portfolio
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <a href="#" class="text-2xl font-['Pacifico'] text-white mb-4 md:mb-0">Enes</a>
+      <div class="flex items-center gap-6">
+       
+      </div>
+      <p class="text-gray-400 text-sm mt-4 md:mt-0">© 2025 Enes Özbuğanlı. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top Button -->
+<a href="/DetailScreen/SakutDetails.html" class="fixed bottom-8 right-8 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+  <i class="ri-arrow-up-line ri-lg"></i>
+</a>
+
+<script>
+// Initialize charts
+document.addEventListener('DOMContentLoaded', function() {
+  // Collaborative Filtering Chart
+  const collaborativeChart = echarts.init(document.getElementById('collaborative-chart'));
+  const collaborativeOption = {
+    animation: false,
+    title: {
+      text: 'Recommendation Accuracy',
+      textStyle: {
+        fontSize: 14,
+        fontWeight: 'normal',
+        color: '#1f2937'
+      }
+    },
+    tooltip: {
+      trigger: 'axis',
+      backgroundColor: 'rgba(255, 255, 255, 0.8)',
+      textStyle: {
+        color: '#1f2937'
+      }
+    },
+    xAxis: {
+      type: 'category',
+      data: ['Initial', 'Week 1', 'Week 2', 'Week 3', 'Week 4'],
+      axisLine: {
+        lineStyle: {
+          color: '#d1d5db'
+        }
+      },
+      axisLabel: {
+        color: '#4b5563'
+      }
+    },
+    yAxis: {
+      type: 'value',
+      min: 0,
+      max: 100,
+      axisLine: {
+        lineStyle: {
+          color: '#d1d5db'
+        }
+      },
+      axisLabel: {
+        color: '#4b5563',
+        formatter: '{value}%'
+      }
+    },
+    series: [
+      {
+        name: 'Accuracy',
+        type: 'line',
+        smooth: true,
+        data: [42, 58, 67, 75, 82],
+        itemStyle: {
+          color: 'rgba(87, 181, 231, 1)'
+        },
+        areaStyle: {
+          color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+            { offset: 0, color: 'rgba(87, 181, 231, 0.3)' },
+            { offset: 1, color: 'rgba(87, 181, 231, 0.1)' }
+          ])
+        }
+      }
+    ],
+    grid: {
+      left: '10px',
+      right: '10px',
+      bottom: '10px',
+      top: '50px',
+      containLabel: true
+    }
+  };
+  collaborativeChart.setOption(collaborativeOption);
+
+  // Content-Based Chart
+  const contentChart = echarts.init(document.getElementById('content-chart'));
+  const contentOption = {
+    animation: false,
+    title: {
+      text: 'Genre Matching Precision',
+      textStyle: {
+        fontSize: 14,
+        fontWeight: 'normal',
+        color: '#1f2937'
+      }
+    },
+    tooltip: {
+      trigger: 'item',
+      backgroundColor: 'rgba(255, 255, 255, 0.8)',
+      textStyle: {
+        color: '#1f2937'
+      }
+    },
+    legend: {
+      orient: 'vertical',
+      right: 10,
+      top: 'center',
+      textStyle: {
+        color: '#4b5563'
+      }
+    },
+    series: [
+      {
+        name: 'Genre Match',
+        type: 'pie',
+        radius: ['40%', '70%'],
+        avoidLabelOverlap: false,
+        itemStyle: {
+          borderRadius: 8,
+          borderColor: '#fff',
+          borderWidth: 2
+        },
+        label: {
+          show: false
+        },
+        emphasis: {
+          label: {
+            show: false
+          }
+        },
+        labelLine: {
+          show: false
+        },
+        data: [
+          { value: 40, name: 'Exact Match', itemStyle: { color: 'rgba(87, 181, 231, 1)' } },
+          { value: 30, name: 'Related Match', itemStyle: { color: 'rgba(141, 211, 199, 1)' } },
+          { value: 20, name: 'Partial Match', itemStyle: { color: 'rgba(251, 191, 114, 1)' } },
+          { value: 10, name: 'New Discovery', itemStyle: { color: 'rgba(252, 141, 98, 1)' } }
+        ]
+      }
+    ]
+  };
+  contentChart.setOption(contentOption);
+
+  // Handle window resize
+  window.addEventListener('resize', function() {
+    collaborativeChart.resize();
+    contentChart.resize();
+  });
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+// Back to top button visibility
+const backToTopButton = document.querySelector('a[href="#"]');
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 300) {
+    backToTopButton.classList.remove('hidden');
+  } else {
+    backToTopButton.classList.add('hidden');
+  }
+});
+</script>
+</body>
+</html>
